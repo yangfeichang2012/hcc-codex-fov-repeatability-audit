@@ -35,7 +35,8 @@ def sha256(path: Path) -> str:
 
 
 def write_json(path: Path, value: object) -> None:
-    path.write_text(json.dumps(value, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    with path.open("w", encoding="utf-8", newline="\n") as handle:
+        handle.write(json.dumps(value, ensure_ascii=False, indent=2) + "\n")
 
 
 def write_tsv(path: Path, rows: list[dict], columns: list[str]) -> None:
@@ -339,9 +340,8 @@ def main() -> int:
     }
     write_json(output_dir / "analysis_manifest.json", analysis_manifest)
     files = sorted(path for path in output_dir.iterdir() if path.is_file())
-    (output_dir / "SHA256SUMS.txt").write_text(
-        "".join(f"{sha256(path)}  {path.name}\n" for path in files), encoding="utf-8"
-    )
+    with (output_dir / "SHA256SUMS.txt").open("w", encoding="utf-8", newline="\n") as handle:
+        handle.write("".join(f"{sha256(path)}  {path.name}\n" for path in files))
     print(json.dumps({"status": "PASS", "output_dir": str(output_dir), "files": len(files) + 1}, indent=2))
     return 0
 

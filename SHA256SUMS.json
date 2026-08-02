@@ -4,8 +4,8 @@
   "files": [
     {
       "path": ".gitattributes",
-      "bytes": 169,
-      "sha256": "fb78b939a9991ef125026af23e2fea4a01fb9e1544b7e5c0bcba7ae9a3d92c2c"
+      "bytes": 233,
+      "sha256": "f8ff11a9425648c9fb42045fac8afab165ffcc2733bd96cf4f5c6c8f9fe9a7f7"
     },
     {
       "path": ".github/workflows/reproduce.yml",
@@ -29,8 +29,8 @@
     },
     {
       "path": "code/run_source_to_result.py",
-      "bytes": 15293,
-      "sha256": "7c8f16cbba79069ec62293597b00213e220e97009250a32fab163bf514d14375"
+      "bytes": 15379,
+      "sha256": "9e677ffae36934d78fb6407a0d0f978a0d94db586996d2f634fa240d2d6e7d8e"
     },
     {
       "path": "code/validate_release.py",
@@ -39,8 +39,8 @@
     },
     {
       "path": "expected/analysis_manifest.json",
-      "bytes": 2656,
-      "sha256": "74853bec9ecd3b27422a4fe4af975aa4bfebd78e22f57fcf3ce35d60298bc340"
+      "bytes": 2576,
+      "sha256": "5bb4743265f0147c5c18b92e46241adf2162f69ced907d7d5667b4eec8ba5686"
     },
     {
       "path": "expected/bootstrap_icc_draws.tsv",
@@ -59,13 +59,13 @@
     },
     {
       "path": "expected/SHA256SUMS.txt",
-      "bytes": 446,
-      "sha256": "d973be7c6379bde535c604898b2d126c9136a83b877f5d15f1b01e1e018a5770"
+      "bytes": 441,
+      "sha256": "b5f1c54b724c1befd5d94141d23558c9563eb892b383c25ce459c55e9777b200"
     },
     {
       "path": "expected/source_preflight.json",
-      "bytes": 986,
-      "sha256": "76d66996e9c283fe56ab34433cf514c177c3e93aabf70d9fa786978a784a7f0e"
+      "bytes": 953,
+      "sha256": "76c943871ff9e85902f56a0bf9dbc3d1196b5793966b173750732408ab5381a1"
     },
     {
       "path": "LICENSE",
