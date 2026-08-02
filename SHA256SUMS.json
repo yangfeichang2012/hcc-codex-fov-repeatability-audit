@@ -14,8 +14,8 @@
     },
     {
       "path": "CITATION.cff",
-      "bytes": 794,
-      "sha256": "701528db4934b2e57ea35102eda9adf213a4b698b99285f232b55330562308ea"
+      "bytes": 823,
+      "sha256": "668700f63183ca4de71da17d8170c9f75eb0633ec85578cc249c0f4d757e48f3"
     },
     {
       "path": "code/build_release.py",
@@ -89,8 +89,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 3206,
-      "sha256": "677cfe90efc952961ecad6d2c0569cc7219ae8b7cee9ba63bb383eb5688fa123"
+      "bytes": 3364,
+      "sha256": "c4dbf2748d4cb5a4785372584c13733ef746df2e3b348eac232ad7bf7cff25ca"
     },
     {
       "path": "requirements.txt",

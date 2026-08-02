@@ -1,5 +1,7 @@
 # Within-biopsy CODEX FOV repeatability audit
 
+Version 1.0.0 is archived at [Zenodo DOI 10.5281/zenodo.21759803](https://doi.org/10.5281/zenodo.21759803).
+
 This archive reconstructs the three frozen SPARC-MIF ratios from the exact public source objects in Zenodo record `19123188`, then reproduces the patient-level ICC(1,1), 2,000-replicate patient-cluster bootstrap intervals, and leave-one-patient-out ICC diagnostics reported for PRJ-2026-009.
 
 ## Scope
@@ -47,4 +49,4 @@ Code is licensed under BSD-3-Clause. Derived aggregate tables, documentation, an
 
 ## Citation
 
-Use the version DOI in `CITATION.cff` for this archive and cite the source dataset separately.
+Use the version DOI [10.5281/zenodo.21759803](https://doi.org/10.5281/zenodo.21759803) for this archive and cite the source dataset separately.

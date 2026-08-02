@@ -4,6 +4,7 @@ title: "Within-biopsy CODEX FOV repeatability audit of three HCC spatial feature
 type: software
 version: 1.0.0
 date-released: 2026-08-02
+doi: 10.5281/zenodo.21759803
 authors:
   - family-names: Duan
     given-names: Chuan-Xin
