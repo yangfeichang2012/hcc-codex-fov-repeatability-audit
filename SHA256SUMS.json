@@ -3,6 +3,11 @@
   "release": "v1.0.0",
   "files": [
     {
+      "path": ".gitattributes",
+      "bytes": 169,
+      "sha256": "fb78b939a9991ef125026af23e2fea4a01fb9e1544b7e5c0bcba7ae9a3d92c2c"
+    },
+    {
       "path": ".github/workflows/reproduce.yml",
       "bytes": 967,
       "sha256": "016b5cad5f714b20e742236679cb8ec2cf0fecd4b40862846498b602139b2e29"

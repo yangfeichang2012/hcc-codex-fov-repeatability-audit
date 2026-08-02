@@ -1,0 +1,3 @@
+# Python's CSV writer emits RFC-style CRLF records on every platform.
+# Preserve the frozen TSV bytes so clean Linux runners compare like-for-like.
+expected/*.tsv -text
