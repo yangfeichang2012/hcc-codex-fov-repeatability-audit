@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0.0",
+  "source_record": "https://zenodo.org/records/19123188",
+  "source_doi": "10.5281/zenodo.19123188",
+  "source_license": "CC-BY-4.0",
+  "files": [
+    {
+      "name": "metadata.csv",
+      "url": "https://zenodo.org/api/records/19123188/files/metadata.csv/content",
+      "bytes": 3556,
+      "sha256": "9e87b7c374db5b06de3bc22e2a1c295232cf61e964c2b0548cf1c9fc3121b882"
+    },
+    {
+      "name": "CODEX-MIF.zip",
+      "url": "https://zenodo.org/api/records/19123188/files/CODEX-MIF.zip/content",
+      "bytes": 863912545,
+      "sha256": "afd294100a878f51ecac6f7e79be3a191f8a44cd7440f049dbcae1bc134c8373"
+    },
+    {
+      "name": "notebook_and_resources_v2.zip",
+      "url": "https://zenodo.org/api/records/19123188/files/notebook_and_resources_v2.zip/content",
+      "bytes": 29863743,
+      "sha256": "f3fa9ab603709522c5e6eee2c112be267720e66e6e1c4075fa2d1db3ed351750"
+    }
+  ],
+  "redistribution": "Source files are downloaded from the official record and are not packaged in this release."
+}

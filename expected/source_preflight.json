@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0.0",
+  "status": "PASS",
+  "source_record": "https://zenodo.org/records/19123188",
+  "source_files": [
+    {
+      "name": "metadata.csv",
+      "bytes": 3556,
+      "sha256": "9e87b7c374db5b06de3bc22e2a1c295232cf61e964c2b0548cf1c9fc3121b882"
+    },
+    {
+      "name": "CODEX-MIF.zip",
+      "bytes": 863912545,
+      "sha256": "afd294100a878f51ecac6f7e79be3a191f8a44cd7440f049dbcae1bc134c8373"
+    },
+    {
+      "name": "notebook_and_resources_v2.zip",
+      "bytes": 29863743,
+      "sha256": "f3fa9ab603709522c5e6eee2c112be267720e66e6e1c4075fa2d1db3ed351750"
+    }
+  ],
+  "cell_type_files": 48,
+  "microenvironment_sha256": "4c936cfc9b085fc556561da7c43a7bb8d9482de73df3d4a1df1ed828482ecaa4",
+  "metadata_rows": 48,
+  "all_region_lengths_match": true,
+  "expression_files_extracted": 0,
+  "expression_files_read": 0,
+  "zero_denominator_regions": {
+    "SPARC-MIF-01": 0,
+    "SPARC-MIF-02": 0,
+    "SPARC-MIF-03": 2
+  }
+}

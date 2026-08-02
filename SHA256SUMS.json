@@ -1,0 +1,121 @@
+{
+  "schema_version": "1.0.0",
+  "release": "v1.0.0",
+  "files": [
+    {
+      "path": ".github/workflows/reproduce.yml",
+      "bytes": 967,
+      "sha256": "016b5cad5f714b20e742236679cb8ec2cf0fecd4b40862846498b602139b2e29"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 60,
+      "sha256": "f05e98d96fdfc11fb872c03d99561ff2e9568c73e28ac71d2c48158b8f55ee2f"
+    },
+    {
+      "path": "CITATION.cff",
+      "bytes": 794,
+      "sha256": "701528db4934b2e57ea35102eda9adf213a4b698b99285f232b55330562308ea"
+    },
+    {
+      "path": "code/build_release.py",
+      "bytes": 2153,
+      "sha256": "d13eca914c71ebc31be432a7e43b1a60b127d9359e97d4f05e7a42f3593cf3d4"
+    },
+    {
+      "path": "code/run_source_to_result.py",
+      "bytes": 15293,
+      "sha256": "7c8f16cbba79069ec62293597b00213e220e97009250a32fab163bf514d14375"
+    },
+    {
+      "path": "code/validate_release.py",
+      "bytes": 4011,
+      "sha256": "67197c4e61a52a0e4aec881fa5208814a48ee51bc0615a09669a6138ed2d915b"
+    },
+    {
+      "path": "expected/analysis_manifest.json",
+      "bytes": 2656,
+      "sha256": "74853bec9ecd3b27422a4fe4af975aa4bfebd78e22f57fcf3ce35d60298bc340"
+    },
+    {
+      "path": "expected/bootstrap_icc_draws.tsv",
+      "bytes": 223461,
+      "sha256": "a795b51a6d7d2c0d9a4d7a664e788026ab5de8ee8cb23a30f775e1e20f534b0c"
+    },
+    {
+      "path": "expected/leave_one_patient_out.tsv",
+      "bytes": 1276,
+      "sha256": "86ec23580bbcf5f83faea4c6514d58649dc6d43a4fc2f86a06a1e294736a8dea"
+    },
+    {
+      "path": "expected/primary_icc.tsv",
+      "bytes": 972,
+      "sha256": "fb3a1563ae632ff0bcacae7bf7e77eeaa386cb9874bdce4106ee931751241b15"
+    },
+    {
+      "path": "expected/SHA256SUMS.txt",
+      "bytes": 446,
+      "sha256": "d973be7c6379bde535c604898b2d126c9136a83b877f5d15f1b01e1e018a5770"
+    },
+    {
+      "path": "expected/source_preflight.json",
+      "bytes": 986,
+      "sha256": "76d66996e9c283fe56ab34433cf514c177c3e93aabf70d9fa786978a784a7f0e"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1536,
+      "sha256": "1e74701f2c02fc3c573aed7d3551a88bdd07b49b826286187058627e9086f567"
+    },
+    {
+      "path": "LICENSE_DATA_AND_OUTPUTS.md",
+      "bytes": 586,
+      "sha256": "085ca0677c3507d281918cafbd00b781a6c0d196e1fb079b8c1e1dd13540b6d4"
+    },
+    {
+      "path": "NOTICE",
+      "bytes": 634,
+      "sha256": "24d47627d6bb8fe2977fbce0d159ee048862f75d6ec97849d064a0361332e5a8"
+    },
+    {
+      "path": "protocol/analysis_execution_contract_v1.0.json",
+      "bytes": 3046,
+      "sha256": "4969f144d5dcd1035647817c1c232990d71f541281f303507a2a9a96e732ceb8"
+    },
+    {
+      "path": "PROTOCOL_HISTORY.md",
+      "bytes": 1803,
+      "sha256": "e94d8272400d3763e51b867ec23168c7d1069a19e23ca7d48c66362fe9808a15"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3206,
+      "sha256": "677cfe90efc952961ecad6d2c0569cc7219ae8b7cee9ba63bb383eb5688fa123"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 27,
+      "sha256": "4b81b6b6a549771115529e6900b9589835cdbfff0c6acf179aef53d283b744d5"
+    },
+    {
+      "path": "SOURCE_DATA.md",
+      "bytes": 1179,
+      "sha256": "dc576a7240ead279052ec44ef30278733dafe53a64b969a52d04729587fbf5e8"
+    },
+    {
+      "path": "source_manifest.json",
+      "bytes": 1032,
+      "sha256": "61926c65bd2745b31afe468d19f91324820710751cfaf88607682ccb122e0b1e"
+    },
+    {
+      "path": "specs/claim_contract_v0.6.tsv",
+      "bytes": 1167,
+      "sha256": "c8bd2078c180dc364ea2c7bdc8dd1fbcc211137822e86da63235263fb01520a6"
+    },
+    {
+      "path": "specs/feature_manifest_v1.tsv",
+      "bytes": 8120,
+      "sha256": "3dd2261bdc76f6a71c14dc12a7815a66152a73e807e8a4336a3508f9a0da6d0b"
+    }
+  ]
+}

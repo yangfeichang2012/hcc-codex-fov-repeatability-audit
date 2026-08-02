@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.0.0",
+  "frozen_at": "2026-07-29",
+  "status": "FROZEN_BEFORE_FEATURE_VALUE_READ",
+  "project_id": "PRJ-2026-009",
+  "authorized_branch": "NARROW_ANCHOR_RELIABILITY_AUDIT",
+  "biological_unit": "patient",
+  "primary_set": {
+    "dataset_role": "A_ICI_PRIMARY_MIF",
+    "timepoint": "Pre",
+    "minimum_regions_per_patient": 2,
+    "minimum_feature_complete_patients": 8,
+    "consensus": "equal_weight_arithmetic_mean"
+  },
+  "feature_operationalization": {
+    "SPARC-MIF-01": {
+      "numerator_me_codes": [3.0],
+      "denominator_me_codes": [3.0, 4.0, 4.1],
+      "unit_counted": "cells carrying source-fixed ME annotation"
+    },
+    "SPARC-MIF-02": {
+      "required_cell_type": "Endothelial cells",
+      "numerator_me_codes": [2.0, 4.0, 4.1],
+      "denominator_me_codes": [2.0, 2.1, 2.2, 2.4, 2.5, 3.0, 4.0, 4.1],
+      "unit_counted": "endothelial cells carrying source-fixed ME annotation"
+    },
+    "SPARC-MIF-03": {
+      "numerator_me_codes": [7.0, 7.1],
+      "denominator_me_codes": [0.0, 7.0, 7.1],
+      "excluded_from_denominator": [0.1],
+      "unit_counted": "cells carrying source-fixed ME annotation"
+    }
+  },
+  "missingness": {
+    "zero_denominator": "missing",
+    "imputation": "none",
+    "feature_eligibility": "patient must have at least two nonmissing regions"
+  },
+  "estimators": {
+    "icc": {
+      "model": "balanced one-way patient random-intercept model",
+      "estimator": "ANOVA method-of-moments ICC(1,1)",
+      "formula": "(MS_between-MS_within)/(MS_between+(k-1)*MS_within), k=2",
+      "negative_patient_variance": "truncate ICC point estimate to 0 and flag boundary"
+    },
+    "single_region_reliability": {
+      "metric": "Spearman correlation between one-region vector and patient consensus",
+      "enumeration": "exhaustive when product of patient region counts <=100000",
+      "otherwise": "10000 draws with seed 20260729"
+    },
+    "response_direction": {
+      "contrast": "responder minus nonresponder",
+      "location": "Hodges-Lehmann median of all pairwise responder-minus-nonresponder differences",
+      "retained": "strictly positive for higher-in-responders; strictly negative for higher-in-nonresponders; zero is not retained"
+    },
+    "bootstrap": {
+      "unit": "patient cluster",
+      "replicates": 2000,
+      "seed": 20260729,
+      "interval": "percentile 95%"
+    }
+  },
+  "stability_thresholds": {
+    "patient_coverage": 0.8,
+    "icc": 0.6,
+    "median_single_region_spearman": 0.7,
+    "direction_retention": 0.8
+  },
+  "sensitivities": [
+    "patient_leave_one_out",
+    "consensus_median",
+    "leave_one_region",
+    "post_treatment_parallel_reliability_if_eligible",
+    "batch_restriction_only_if_not_patient_confounded"
+  ],
+  "prohibited": [
+    "SPARC-ST-01 through SPARC-ST-07",
+    "benchmark numeric layers",
+    "CAR-T numeric layers",
+    "new signatures or proxies",
+    "cutoff optimization",
+    "patient-level treatment recommendation",
+    "region or cell as independent biological N",
+    "post-result tuning"
+  ]
+}

@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the versioned Zenodo release and the source dataset."
+title: "Within-biopsy CODEX FOV repeatability audit of three HCC spatial features"
+type: software
+version: 1.0.0
+date-released: 2026-08-02
+authors:
+  - family-names: Duan
+    given-names: Chuan-Xin
+  - family-names: Yang
+    given-names: Lang
+license: BSD-3-Clause
+repository-code: "https://github.com/yangfeichang2012/hcc-codex-fov-repeatability-audit"
+keywords:
+  - hepatocellular carcinoma
+  - CODEX
+  - spatial omics
+  - repeatability
+  - ICC
+  - reproducibility
+abstract: >-
+  Deterministic public-source reconstruction of three frozen SPARC-MIF ratios
+  and their within-biopsy paired-FOV ICC(1,1), patient-cluster bootstrap, and
+  leave-one-patient-out diagnostics.

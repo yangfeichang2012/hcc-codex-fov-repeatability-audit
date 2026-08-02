@@ -1,0 +1,6 @@
+claim_id	claim_type	feature_id	analysis_set	n_patients	icc	ci_lower	ci_upper	loo_min	loo_max	interpretation_code	narrative_text	status
+C01	ESTIMATE	SPARC-MIF-01	PRIMARY_PRE	11	0.9519634455573124	0.8634736002632606	0.9924102622364553	0.9424118348512373	0.9746192803045733	HIGH_INTERNAL_CONDITIONAL	MIF-01 has a high internal estimate conditional on the selected spatial subset.	CURRENT
+C02	ESTIMATE	SPARC-MIF-02	PRIMARY_PRE	11	0.8949273737591393	0.710416975382867	0.9720043828901788	0.8784168372404673	0.9536527748207458	HIGH_INTERNAL_CONDITIONAL	MIF-02 has a high internal estimate conditional on the selected spatial subset.	CURRENT
+C03	UNCERTAINTY	SPARC-MIF-03	PRIMARY_PRE	9	0.7003021676873524	0.0	0.9902665804577716	0.5941850592787729	0.9761422773426331	INCONCLUSIVE_UNCERTAINTY_FRAGILE	MIF-03 is inconclusive and conditional on the selected spatial subset.	CURRENT
+C04	BOUNDARY									AGGREGATE_ONLY	The package verifies aggregate arithmetic but not source-to-result reproducibility.	CURRENT
+C05	SELECTION									CONDITIONAL_ESTIMAND	All estimates are conditional on the selected spatial subset, paired-FOV availability, and feature estimability.	CURRENT

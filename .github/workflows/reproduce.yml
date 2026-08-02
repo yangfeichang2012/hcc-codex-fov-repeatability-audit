@@ -1,0 +1,32 @@
+name: reproduce
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate-frozen-release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: python -m pip install -r requirements.txt
+      - name: Validate frozen expected outputs
+        run: python code/validate_release.py --output-dir expected --expected-dir expected
+
+  source-to-result:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: python -m pip install -r requirements.txt
+      - name: Reconstruct from public Zenodo source
+        run: python code/run_source_to_result.py --download --output-dir reproduced_outputs
+      - name: Compare with frozen release
+        run: python code/validate_release.py --output-dir reproduced_outputs
